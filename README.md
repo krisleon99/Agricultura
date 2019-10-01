@@ -23,5 +23,8 @@ Se puede ver el manual para usar la app:
 [Manual técnico para uso de la aplicación Agricultura](https://docs.google.com/document/d/10VbrN08x1xuQJngsE47tgaCYx55x-zUsx_8OfErFPsQ/edit?usp=sharing/)
 ======
 
-![AgriculturaApp](https://ibb.co/xqzqSxz "AgriculturaApp")
+
+
+[agricultura]: https://github.com/krisleon99/Agricultura/blob/master/agricultura/statics/img/inicio.png "Inicio"
+
 
