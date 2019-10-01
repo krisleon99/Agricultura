@@ -25,6 +25,6 @@ Se puede ver el manual para usar la app:
 
 
 
-[agricultura]: https://github.com/krisleon99/Agricultura/blob/master/agricultura/statics/img/inicio.png "Inicio"
+[agricultura]: https://github.com/krisleon99/portfolio/blob/master/img/dummies/inicio.png "Inicio"
 
 
