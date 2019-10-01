@@ -1,14 +1,11 @@
 # Agricultura
-## Vizualización de poligonos de agricultura con mapa base de sentinelhub
-### H3
-#### H4
-##### H5
-###### H6
 
-Alternatively, for H1 and H2, an underline-ish style:
+## Visualización de polígonos de agricultura en la zona sur de veracruz, con mapa base de sentinel-hub de la República Mexicana.
 
-Alt-H1
+##### En esta app se encuentra el código para visualizar un archivo shapefile como una capa que se puede prender y apagar.
+
+###### Y al mismo tiempo se obtiene los mapas base de sentinel-hub del año 2018 para vegetación, color falso del territorio de México.
+
+Se programó en Pyhon/Django y se utilizaron wms para obtener los mapas base para sentinel-hub.
 ======
 
-Alt-H2
-------
