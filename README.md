@@ -33,3 +33,7 @@ App:
 Esta app se desarrollo en django, tiene la estructura MVC.
 
 > En la carpeta agricultura se encuentra la app polygons, en dónde se encuentra la lógica de la aplicación
+
+1. Views
+⋅⋅* index. 
+> Método principal en donde desplegamos el HTML en dónde contiene los wms base que de sentinelhub de la República  Mexicana del año 2018
