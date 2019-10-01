@@ -29,4 +29,7 @@ App:
 [logo]: https://github.com/krisleon99/portfolio/blob/master/img/dummies/agriculture.png "Logo Title Text 2"
 
 
+ 
+Esta app se desarrollo en django, tiene la estructura MVC.
 
+> En la carpeta agricultura se encuentra la app polygons, en dónde se encuentra la lógica de la aplicación
