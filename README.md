@@ -24,9 +24,9 @@ Se puede ver el manual para usar la app:
 ======
 
 App: 
-![alt text][logo]
+![agricultura][logo]
 
-[logo]: https://ibb.co/7t3K23y "Logo Title Text 2"
+[logo]: https://github.com/krisleon99/portfolio/blob/master/img/dummies/agriculture.png "Logo Title Text 2"
 
 
 
