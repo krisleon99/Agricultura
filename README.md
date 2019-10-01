@@ -4,7 +4,7 @@
 
 ##### En esta app se encuentra el código para visualizar un archivo shapefile como una capa que se puede prender y apagar.
 
-##### Y al mismo tiempo se obtiene los mapas base de sentinel-hub del año 2018 para vegetación, falso color del territorio de México.
+##### Y al mismo tiempo se obtiene los mapas base de sentinel-hub del año 2018 para vegetación, falso color, agricultura y escala de grises del territorio de México.
 
 ##### Se programó en Pyhon/Django y se utilizaron wms para obtener los mapas base para sentinel-hub.
 
