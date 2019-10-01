@@ -41,5 +41,13 @@ Esta app se desarrollo en django, tiene la estructura MVC.
 - search_area
 > Método vía ajax en donde buscaremos el área que el usuario ingrese, en el cliente se valida que el área sea un valor numérico
 
+Se utilizó *postgres* y la extensión *postgis* para la base de datos, se hizo un query que retorna la geometría de la capa con un método de postgis `ST_AsGeoJSON`
+
 + get_featureinfo
 > Método vía ajax en donde obtenemos los atributos de la capa seleccionada,
+
+ *Nota:* No se cuenta con modelos por los datos consultados se hacen vía wms, y consultas con `psycopg2`
+ 
+2. Templates
+* sentinel_hub.html
+> HTML principal que contiene la visualización del mapa de poligonos de agricultura
