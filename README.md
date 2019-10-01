@@ -9,3 +9,8 @@
 ##### Se programó en Pyhon/Django y se utilizaron wms para obtener los mapas base para sentinel-hub.
 
 
+Se puede ver la app en este servidor:
+------
+
+[AgriculturaApp](http://adesur.centrogeo.org.mx/hd/sentinel_hub/)
+======
