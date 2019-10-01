@@ -1,4 +1,4 @@
-# Agricultura|Áreas de control.
+# Agricultura, Áreas de control.
 
 ## Visualización de polígonos de agricultura en la zona sur de veracruz, con mapa base de sentinel-hub de la República Mexicana.
 
@@ -24,7 +24,10 @@ Se puede ver el manual para usar la app:
 ======
 
 
+Reference-style: 
+![alt text][logo]
 
-[agricultura]: https://github.com/krisleon99/portfolio/blob/master/img/dummies/inicio.png "Inicio"
+[logo]: https://github.com/krisleon99/portfolio/blob/master/img/dummies/inicio.png "Logo Title Text 2"
+
 
 
