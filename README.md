@@ -51,3 +51,8 @@ Se utilizó *postgres* y la extensión *postgis* para la base de datos, se hizo 
 2. Templates
 * sentinel_hub.html
 > HTML principal que contiene la visualización del mapa de poligonos de agricultura
+
+3. JS
+* L.TileLayer.BetterWM.js
+> Archivo que cuenta con el código para poder visualizar el popup de los wms
+ 
