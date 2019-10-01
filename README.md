@@ -23,11 +23,10 @@ Se puede ver el manual para usar la app:
 [Manual técnico para uso de la aplicación Agricultura](https://docs.google.com/document/d/10VbrN08x1xuQJngsE47tgaCYx55x-zUsx_8OfErFPsQ/edit?usp=sharing/)
 ======
 
-
-Reference-style: 
+App: 
 ![alt text][logo]
 
-[logo]: https://github.com/krisleon99/portfolio/blob/master/img/dummies/inicio.png "Logo Title Text 2"
+[logo]: https://ibb.co/7t3K23y "Logo Title Text 2"
 
 
 
