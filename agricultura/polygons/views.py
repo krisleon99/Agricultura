@@ -12,7 +12,7 @@ from django.http import HttpResponse
 
 
 """
-    método principal en donde desplegamos el HTML que nos propocionó sentinelHub 
+    método principal en donde desplegamos el HTML que nos propocionó sentinelHub
     (se hicieron las modificaciones pertinentes para poder tener los wms como capa base de opciones)
 """
 def index(request):
@@ -21,7 +21,7 @@ def index(request):
 
 """
     método vía ajax en donde buscaremos el área que el usuario ingrese,
-    en el cliente se valida que el área sea un valor numerico 
+    en el cliente se valida que el área sea un valor numerico
 """
 def search_area(request):
     if request.is_ajax():
@@ -70,8 +70,35 @@ def search_area(request):
 def get_featureinfo(request):
     if request.is_ajax():
         typename = request.POST['layername']
-        print(typename)
+        getFeature_url = request.POST['url']
+        getfeature_dict = {}
+        if typename and getFeature_url:
+            response = urllib2.urlopen(getFeature_url)
+            data = json.load(response)
+            if data['features']:
+                properties = data['features'][0]['properties']
+                attr_dict = {}
+                cur = connections['datastore'].cursor()
+                # armamos el query, para traer los atributos del poligono seleccionado
+                sql = 'SELECT ST_AsGeoJSON(the_geom), area, descr_31 FROM "%s" WHERE area =' % layer \
+                      + "'%s'" % area
+                try:
+                    # se ejecuta la consulta en un try por si algo sale mal
+                    cur.execute(sql)
+                    attributes = cur.fetchall()
+                except Exception as e:
+                    print e
 
-        return HttpResponse(json.dumps(typename), mimetype="application/json")
+                try:
+                    for attr in attributes:
+                        if attr.description:
+                            attr_dict[attr.attribute] = attr.description
+                        else:
+                            attr_dict[attr.attribute] = attr.attribute
+                except:
+                    print 'No Layer found'
+                    pass
+                getfeature_dict = {'properties': properties, 'attr_desc': attr_dict}
+        return HttpResponse(json.dumps(getfeature_dict), mimetype="application/json")
     else:
         return HttpResponse("Not ajax request")

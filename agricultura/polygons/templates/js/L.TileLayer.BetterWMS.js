@@ -1,9 +1,4 @@
 <script type="text/javascript">
-// var customOptions =
-//         {
-//         'className' : 'results-censo2010',
-//         'className' : 'click-census-analysis'
-//         }
 L.TileLayer.BetterWMS = L.TileLayer.WMS.extend({
   onAdd: function (map) {
     // Triggered when the layer is added to a map.
@@ -72,41 +67,6 @@ L.TileLayer.BetterWMS = L.TileLayer.WMS.extend({
             var desc = data.attr_desc;
             pcontent += '<table class="table table-hover table-striped table-bordered table-condensed"><thead><tr><th>Atributo</th><th>Valor</th></tr></thead><tbody>'
             if(!jQuery.isEmptyObject(desc)){
-            //   if (census.getConstants()) {
-            //     $.each(jdata, function(key, value){
-            //         if(value==null){
-            //             value='';
-            //         }
-            //         if(!isNaN(value)){
-            //             if(value.toString().indexOf('.') != -1){
-            //                 var arr = value.toString().split('.');
-            //                 var trunc = arr[1].substring(0, 2);
-            //                 pcontent += '<tr><td>'+desc[key]+'</td><td>'+arr[0]+'.'+trunc+'</td>';
-            //             } else{
-            //                 pcontent += '<tr><td>'+desc[key]+'</td><td>'+value+'</td>';
-            //             }
-            //         } else {
-            //             pcontent += '<tr><td>'+desc[key]+'</td><td>'+value+'</td>';
-            //         }
-            //     });
-            //     var container = $('<div />');
-            // container.on('click', 'div.click-census-analysis', function() {
-            //   if (typeof($(".layer-selected").attr('id')) != "undefined") {
-            //         var swt_id = $(".layer-selected").attr('id').slice(1);
-            //         var lay_id = $("#"+swt_id).attr('data-regid');
-            //         if (typeof(lay_id) != "undefined") {
-            //            census.getResultsCensus(jdata,lay_id);
-            //         }
-            //     }
-            //    });
-            // pcontent += '<tr><td class="click-census-analysis" style="background-color: #97bd3d; color: #FFFFFF;">Analisis para el objeto seleccionado</td><td class="click-census-analysis" style="background-color: #97bd3d; color: #FFFFFF; cursor: pointer;"><div class="click-census-analysis"><i class="fa fa-pagelines fa-2x" title="Analisis para el objeto seleccionado"></i></div></td></tr>';
-            // pcontent += '</tbody></table>';
-            // container.html(pcontent);
-            // L.popup()
-            //   .setLatLng(latlng)
-            //   .setContent(container[0], customOptions)
-            //   .openOn(e._map);
-            //   }else{
                 $.each(jdata, function(key, value){
                     if(value==null){
                         value='';
@@ -128,8 +88,6 @@ L.TileLayer.BetterWMS = L.TileLayer.WMS.extend({
                   .setLatLng(latlng)
                   .setContent(pcontent)
                   .openOn(e._map);
-            //  }
-
             }
             else{
                 $.each(jdata, function(key, value){
@@ -149,7 +107,6 @@ L.TileLayer.BetterWMS = L.TileLayer.WMS.extend({
     });
   }
 });
-
 L.tileLayer.betterWms = function (url, options) {
   return new L.TileLayer.BetterWMS(url, options);
 };

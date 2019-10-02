@@ -23,13 +23,13 @@ Se puede ver el manual para usar la app:
 [Manual técnico para uso de la aplicación Agricultura](https://docs.google.com/document/d/10VbrN08x1xuQJngsE47tgaCYx55x-zUsx_8OfErFPsQ/edit?usp=sharing/)
 ======
 
-App: 
+App:
 ![agricultura][logo]
 
 [logo]: https://github.com/krisleon99/portfolio/blob/master/img/dummies/agriculture.png "Logo Title Text 2"
 
 
- 
+
 Esta app se desarrollo en django, tiene la estructura MVC.
 
 > En la carpeta agricultura se encuentra la app polygons, en dónde se encuentra la lógica de la aplicación
@@ -47,12 +47,14 @@ Se utilizó *postgres* y la extensión *postgis* para la base de datos, se hizo 
 > Método vía ajax en donde obtenemos los atributos de la capa seleccionada,
 
  *Nota:* No se cuenta con modelos por los datos consultados se hacen vía wms, y consultas con `psycopg2`
- 
+
 2. Templates
 * sentinel_hub.html
-> HTML principal que contiene la visualización del mapa de poligonos de agricultura
+> HTML principal que contiene la visualización del mapa de poligonos de agricultura con los servicios wms de Sentinel Hub integrados con Leaflet
 
 3. JS
 * L.TileLayer.BetterWM.js
-> Archivo que cuenta con el código para poder visualizar el popup de los wms
- 
+> Archivo que cuenta con el código para poder visualizar el popup de los wms, el cual se entcuentra en la carpeta de `templates/js`
+
+- script.js
+> Archivo que cuenta con el código integrado con Leaflet para poder servir los mapa base tomados de los servicios wms de Sentinel Hub, el cual se entcuentra en la carpeta de `templates/js`
